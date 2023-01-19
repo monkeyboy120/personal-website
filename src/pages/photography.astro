@@ -1,4 +1,5 @@
 ---
+
 import PhotoSlide from "../components/PhotoSlide.svelte";
 import Main from "../layouts/Main.astro";
 const pageTitle = "Photography";
@@ -6,5 +7,5 @@ const pageTitle = "Photography";
 ---
 
 <Main pageTitle = {pageTitle}>
-    <PhotoSlide />
+    <PhotoSlide client:load/>
 </Main>
