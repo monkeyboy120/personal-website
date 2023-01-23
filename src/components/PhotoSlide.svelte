@@ -24,7 +24,7 @@
 
     track.animate(
       {
-        transform: `translate(${nextPercentage}%)`,
+        transform: `translate(${nextPercentage * 4}%)`,
       },
       { duration: 1200, fill: "forwards" }
     );
@@ -47,7 +47,7 @@
   on:mouseup={handleOnUp}
 />
 <div
-  class="flex gap-[4vmin] absolute left-1/2 top-1/4 select-none transform -translate-x-0 -translate-y-[-50%]"
+  class="flex gap-[4vmin] absolute left-1/2 top-1/4 select-none transform -translate-x-0 -translate-y--1/2"
   id="image-track"
   bind:this={track}
   data-mouse-down-at="0"
