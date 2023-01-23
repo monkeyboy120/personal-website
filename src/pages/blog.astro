@@ -1,9 +1,10 @@
 ---
+import Test from "../components/Test.svelte";
 import Main from "../layouts/Main.astro";
 const pageTitle = "Blog";
 
 ---
 
 <Main pageTitle = {pageTitle}>
-    
+    <Test client:load/>
 </Main>
