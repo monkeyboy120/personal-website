@@ -1,8 +1,11 @@
 ---
 import Main from "../layouts/Main.astro";
 const pageTitle = "Home";
-
+import "../styles/global.css";
 ---
 
-<Main pageTitle = {pageTitle}>
+<Main pageTitle={pageTitle}>
+  <div class="flex justify-center">
+    <h1 class="inline-block overflow-hidden tracking-wide whitespace-nowrap text-3xl animate-typewriter animation-delay-4000">Welcome to My Site!</h1>
+  </div>
 </Main>
