@@ -1,7 +1,7 @@
 <script>
   let track;
   let innerWidth;
-
+  
   const handleOnDown = (e) => (track.dataset.mouseDownAt = e.clientX);
 
   const handleOnUp = () => {
