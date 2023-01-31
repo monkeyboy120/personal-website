@@ -1,23 +1,25 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   let target: HTMLElement;
-  function TextRotate({ target, data}) {
-    const text = target.data.rotate;
-    const rotate = target.data.rotate;
-    let index = 0;
-
+  function rotateText() {
+    const words: string[] = target.dataset.rotate.split(",");
+    let i = 0;
     setInterval(() => {
-      target.textContent = text + rotate[index];
-      index = (index + 1) % rotate.length;
+      target.innerText = words[i];
+      i = (i + 1) % words.length;
     }, 2000);
   }
-
+  onMount(rotateText);
 </script>
-<div class="inline-block text-center animate-typewriter whitespace-nowrap overflow-hidden">
-<p class="text-8xl text-gray-600">
-  Welcome to My
-</p>
 
-<p class="text-8xl" data-rotate='["Website", "Project", "Portfolio", "Passion"]' bind:this={target}>
-  
-</p>
+<div
+  class="inline-block text-center animate-typewriter whitespace-nowrap overflow-hidden"
+>
+  <p class="text-8xl">Welcome to My</p>
+
+  <p
+    class="text-8xl"
+    data-rotate="Website, Project, Portfolio, Passion"
+    bind:this={target}
+  />
 </div>

@@ -1,4 +1,5 @@
 ---
+import WordCarousel from "../components/WordCarousel.svelte";
 import Main from "../layouts/Main.astro";
 const pageTitle = "Home";
 import "../styles/global.css";
@@ -6,6 +7,6 @@ import "../styles/global.css";
 
 <Main pageTitle={pageTitle}>
   <div class="flex justify-center">
-    <h1 class="text-8xl text-white animate-pulse">Welcome</h1>
+    <WordCarousel client:load/>
   </div>
 </Main>
