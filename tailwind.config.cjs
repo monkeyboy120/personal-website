@@ -5,6 +5,10 @@ module.exports = {
 		extend: {
 			animation: {
 				blob: "blob 4s infinite",
+				typewriter: "typing 3.5s steps(30, end), blink-caret .75s step-end infinite", 
+				navup: "navup 1s",
+				navdrop: "navdrop 1s",
+				
 			},
 			keyframes: {
 				blob: {
@@ -18,8 +22,25 @@ module.exports = {
 						transform: "translate(-20px, 20px) scale(0.9)",
 					},
 					"100%": {
-						transform: "tranlate(0px, 0px) scale(1)",
+						transform: "translate(0px, 0px) scale(1)",
 					},
+				},
+				typing: {
+					from: {
+						width: "0%"
+					},
+					to: {
+						width: "100%"
+					}
+				},
+				navup: {
+					"0%": {
+						transform: "translateY(0rem)",
+					},
+					"100%": {
+						transform: "translateY(-4rem)",
+					}
+
 				},
 			},
 		},
