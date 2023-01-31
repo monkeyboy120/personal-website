@@ -1,5 +1,5 @@
 <div
-  class=" absolute top-0 w-full h-16 flex items-end justify-end bg-[#e37500] hover:animate-navup animate-navdown"
+  class=" absolute top-0 w-full h-16 flex items-end justify-end bg-[#e37500]"
 >
   <a
     href="/"
