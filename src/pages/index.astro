@@ -1,8 +1,12 @@
 ---
+import WordCarousel from "../components/WordCarousel.svelte";
 import Main from "../layouts/Main.astro";
 const pageTitle = "Home";
-
+import "../styles/global.css";
 ---
 
-<Main pageTitle = {pageTitle}>
+<Main pageTitle={pageTitle}>
+  <div class="flex justify-center">
+    <WordCarousel client:load/>
+  </div>
 </Main>

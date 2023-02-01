@@ -1,5 +1,5 @@
 ---
-import Navigation from "../components/Navigation.astro";
+import Navigation from "../components/Navigation.svelte";
 const {pageTitle} = Astro.props;
 ---
 <html lang="en" class="text-white bg-[#0a1828] font-sans">
@@ -12,9 +12,8 @@ const {pageTitle} = Astro.props;
   </head>
   <body>
     <div class="h-16 w-full">
-    <Navigation />
+    <Navigation/>
     </div>
-    <h1 class="text-center text-6xl">{pageTitle}</h1>
     <slot></slot>
   </body>
 </html>
