@@ -2,12 +2,12 @@
     let container: HTMLElement;
     function createCard() {
         container.appendChild(document.createElement('div'));
-        container.children[container.children.length - 1].innerHTML = `
-            <div class="card">
-                <h2>Card Title</h2>
-                <p>Card Content</p>
-            </div>
-        `;
+        let card: HTMLDivElement = document.createElement('div');
+        card.innerText = 'Hello World';
+        card.style.textColor = 'red';
+        function createCard() {
+            container.appendChild(card);
+        }
     }
 </script>
 

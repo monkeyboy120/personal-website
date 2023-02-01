@@ -3,15 +3,12 @@
   let target: HTMLElement;
   function rotateText() {
     const words: string[] = target.dataset.rotate.split(",");
-    let i = 0;
+    let i: number = 0;
     setInterval(() => {
       target.innerText = words[i];
       i = (i + 1) % words.length;
     }, 2000);
   }
-
-
-
   onMount(rotateText);
 </script>
 
@@ -23,5 +20,6 @@
   <p
     class="text-8xl"
     data-rotate="Website, Project, Portfolio, Passion"
-    bind:this={target}></p>
+    bind:this={target}
+  ></p>
 </div>
