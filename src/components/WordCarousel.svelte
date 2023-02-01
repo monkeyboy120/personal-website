@@ -9,6 +9,9 @@
       i = (i + 1) % words.length;
     }, 2000);
   }
+
+
+
   onMount(rotateText);
 </script>
 
@@ -20,6 +23,5 @@
   <p
     class="text-8xl"
     data-rotate="Website, Project, Portfolio, Passion"
-    bind:this={target}
-  />
+    bind:this={target}></p>
 </div>

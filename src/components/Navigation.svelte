@@ -1,5 +1,6 @@
 <div
-  class=" absolute top-0 w-full h-16 flex items-end justify-end bg-[#e37500]"
+  class=" absolute top-0 w-full h-16 flex items-end justify-end bg-[#e37500]
+  "
 >
   <a
     href="/"
