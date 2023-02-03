@@ -1,5 +1,6 @@
 ---
 
+import LightBox from "../components/LightBox.svelte";
 import PhotoSlide from "../components/PhotoSlide.svelte";
 import Main from "../layouts/Main.astro";
 const pageTitle = "Photography";
@@ -7,6 +8,7 @@ const pageTitle = "Photography";
 ---
 <body class=" h-screen w-screen m-0 overflow-hidden">
 <Main pageTitle = {pageTitle}>
+    <LightBox client:load/>
     <PhotoSlide client:visible/>
 </Main>
 </body>
