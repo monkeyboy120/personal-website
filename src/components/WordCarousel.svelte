@@ -1,9 +1,9 @@
-<script lang="ts">
+<script>
   import { onMount } from "svelte";
-  let target: HTMLElement;
+  let target;
   function rotateText() {
-    const words: string[] = target.dataset.rotate.split(",");
-    let i: number = 0;
+    const words = target.dataset.rotate.split(",");
+    let i = 0;
     setInterval(() => {
       target.innerText = words[i];
       i = (i + 1) % words.length;
