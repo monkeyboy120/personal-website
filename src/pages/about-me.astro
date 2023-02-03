@@ -1,9 +1,20 @@
 ---
 import Main from "../layouts/Main.astro";
 const pageTitle = "About-Me";
-
 ---
 
-<Main pageTitle = {pageTitle}>
-    
+<Main pageTitle={pageTitle}>
+  <div class="grid columns-1 row-auto w-full justify-center">
+    <img
+      src="/IMG_3959.jpg"
+      alt="My Profile Picture"
+      width="500rem"
+      height="auto"
+    />
+    <h1 class="text-8xl">About Me</h1>
+    <p>
+      Hi, I'm currently a junior at Novi High-school. I'm building this website
+      to showcase some of my passions. Check back often for updates!
+    </p>
+  </div>
 </Main>
