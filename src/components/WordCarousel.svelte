@@ -15,10 +15,10 @@
 <div
   class="inline-block text-center animate-typewriter whitespace-nowrap overflow-hidden w-full"
 >
-  <p class="text-8xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 text-transparent bg-clip-text">Welcome to My</p>
+  <p class="text-8xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">Welcome to My</p>
 
   <p
-    class="text-8xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 text-transparent bg-clip-text"
+    class="text-8xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text"
     data-rotate="Website, Project, Portfolio, Passion"
     bind:this={target}
   ></p>
