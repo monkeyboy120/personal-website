@@ -13,7 +13,7 @@
 </script>
 
 <div
-  class="inline-block text-center animate-typewriter whitespace-nowrap overflow-hidden"
+  class="inline-block text-center animate-typewriter whitespace-nowrap overflow-hidden w-full"
 >
   <p class="text-8xl">Welcome to My</p>
 

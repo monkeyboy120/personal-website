@@ -1,8 +1,10 @@
 ---
 import Main from "../layouts/Main.astro";
 const pageTitle = "Home";
+import WordCarousel from "../components/WordCarousel.svelte";
 
 ---
 
 <Main pageTitle = {pageTitle}>
+    <WordCarousel client:load/>
 </Main>
