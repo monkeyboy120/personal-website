@@ -50,7 +50,7 @@
         on:mouseup={handleOnUp}
 />
 
-<div class="absolute left-10 top-1/2 rounded-2xl drop-shadow-md bg-amber-500 text-2xl p-1"
+<div class="absolute left-10 top-1/2 rounded-2xl drop-shadow-md bg-gradient-to-r from-indigo-500 to-purple-500 text-2xl p-1"
      bind:this={popup}>
     <p>Click and drag screen to view gallery images</p>
 </div>
