@@ -9,7 +9,9 @@
       i = (i + 1) % words.length;
     }, 2000);
   }
+
   onMount(rotateText);
+
 </script>
 
 <div
