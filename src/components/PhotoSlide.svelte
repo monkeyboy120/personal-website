@@ -26,7 +26,7 @@
 
         track.animate(
             {
-                transform: `translate(${nextPercentage * 4}%)`,
+                transform: `translate(${nextPercentage}%)`,
             },
             {duration: 1200, fill: "forwards"}
         );
@@ -73,7 +73,7 @@
             draggable="false"
             alt="a"
     />
-    <img
+    <!-- <img
             class="w-[40vmin] h-[56vmin] object-cover object-[100%]"
             src="https://images.unsplash.com/photo-1618202133208-2907bebba9e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
             draggable="false"
@@ -108,5 +108,5 @@
             src="https://images.unsplash.com/photo-1516681100942-77d8e7f9dd97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
             draggable="false"
             alt="a"
-    />
+    /> -->
 </div>
