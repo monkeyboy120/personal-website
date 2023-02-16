@@ -1,15 +1,18 @@
 ---
-import { getCollection } from 'astro:content';
-// 1. Generate a new path for every collection entry
-export async function getStaticPaths() {
-  const blogEntries = await getCollection('blogCollection');
-  return blogEntries.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
-  }));
-}
-// 2. When it's time to render, you can get the entry directly from the prop
-const { entry } = Astro.props;
+import Main from "../../layouts/Main.astro";
+import BlogPost from "../../components/BlogPost.astro";
+import { getEntryBySlug } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import type { HtmlTag } from "svelte/internal";
+
+
+const { slug } = Astro.params;
+const entry: any = await getEntryBySlug("blogCollection", slug);
+
 const { Content } = await entry.render();
 ---
-<h1>{entry.data.title}</h1>
-<Content />
+
+<Main>
+  <h1 class="text-8xl">{entry.data.title}</h1>
+  <Content />
+</Main>

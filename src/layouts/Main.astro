@@ -1,7 +1,8 @@
 ---
 import Navigation from "../components/Navigation.astro";
-const {pageTitle} = Astro.props;
+const { pageTitle } = Astro.props;
 ---
+
 <html lang="en" class="text-white bg-[#0a1828] font-sans">
   <head>
     <meta charset="utf-8" />
@@ -12,8 +13,12 @@ const {pageTitle} = Astro.props;
   </head>
   <body>
     <div class="h-16 w-full">
-    <Navigation />
+      <Navigation />
     </div>
-    <slot></slot>
+    <article>
+      <div class="flex flex-col justify-center items-center p-10">
+        <slot />
+      </div>
+    </article>
   </body>
 </html>

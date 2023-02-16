@@ -12,12 +12,8 @@ const blogEntries = await getCollection("blogCollection");
     <ul>
         {blogEntries.map(blogEntries => (
           <li>
-            <a href={`/my-blog-url/${blogEntries.slug}`}>{blogEntries.data.title}</a>
+            <a href={`/posts/${blogEntries.slug}`}>{blogEntries.data.title}</a>
           </li>
         ))}
       </ul>
-    <div class="grid grid-cols-2 row-auto w-1/2 content-center absolute left-1/4 top-1/4">
-        <BlogCard />
-        <BlogCard />
-    </div>
 </Main>
