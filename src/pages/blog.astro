@@ -2,7 +2,18 @@
 import Main from "../layouts/Main.astro";
 const pageTitle = "Blog";
 
+import { getCollection } from "astro:content";
+import BlogCard from "../components/BlogCard.astro";
+
+const blogEntries = await getCollection("blogCollection");
 ---
 
 <Main pageTitle = {pageTitle}>
+    <ul>
+        {blogEntries.map(blogEntries => (
+          <li>
+            <a href={`/posts/${blogEntries.slug}`}>{blogEntries.data.title}</a>
+          </li>
+        ))}
+      </ul>
 </Main>

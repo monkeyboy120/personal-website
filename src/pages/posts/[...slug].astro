@@ -1,0 +1,18 @@
+---
+import Main from "../../layouts/Main.astro";
+import BlogPost from "../../components/BlogPost.astro";
+import { getEntryBySlug } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import type { HtmlTag } from "svelte/internal";
+
+
+const { slug } = Astro.params;
+const entry: any = await getEntryBySlug("blogCollection", slug);
+
+const { Content } = await entry.render();
+---
+
+<Main>
+  <h1 class="text-8xl">{entry.data.title}</h1>
+  <Content />
+</Main>
